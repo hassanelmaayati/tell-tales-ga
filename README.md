@@ -1,13 +1,14 @@
 # The first of us: Choose Your Own Adventure
 
 ## Game Choice:
-- Choose Your Own Adventure, a branching narrative game where the player's choices determine survival.
+- Choose Your Own Adventure, a branching narrative game where the player's choices determine sur
+vival.
 
 ## Concept
 - The player starts in their apartment when an emergency alarm interrupts their phone and TV, warning of a zombie outbreak and calling for immediate evacuation to shelters. The player must leave the city, make choices at each scene that leads towards survival (reaching the shelter) or death (bitten, overrun, ambushed, etc).
 
 ## Story Map
-
+<img width="1267" height="743" alt="Screenshot 2026-08-01 231129" src="https://github.com/user-attachments/assets/d0d24d1d-b9b0-48f0-87e6-8e74efa8741a" />
  **Scene 1: Apartment**
 - A) Grab bag and leave now → Scene 2 (Street)
 - B) Check on neighbor first → Ending: Bitten (LOSE)
