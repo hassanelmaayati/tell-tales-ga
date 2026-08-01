@@ -1,4 +1,4 @@
-# The first of us: Choose Your Own Adventure
+# The First Of Us: Choose Your Own Adventure
 
 ## Game Choice:
 - Choose Your Own Adventure, a branching narrative game where the player's choices determine sur
