@@ -1,8 +1,7 @@
 # The First Of Us: Choose Your Own Adventure
 
 ## Game Choice:
-- Choose Your Own Adventure, a branching narrative game where the player's choices determine sur
-vival.
+- Choose Your Own Adventure, a branching narrative game where the player's choices determine survival.
 
 ## Concept
 - The player starts in their apartment when an emergency alarm interrupts their phone and TV, warning of a zombie outbreak and calling for immediate evacuation to shelters. The player must leave the city, make choices at each scene that leads towards survival (reaching the shelter) or death (bitten, overrun, ambushed, etc).
