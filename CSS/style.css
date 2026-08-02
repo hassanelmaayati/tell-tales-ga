@@ -14,8 +14,67 @@
   cursor: pointer;
   z-index: 999;
   transition: opacity 0.5s ease; 
+  
+}
+
+.londrina-shadow-regular {
+  font-family: "Londrina Shadow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.nosifer-regular {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .hidden {
   display: none !important;
+}
+
+#scene-image{
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100vw; height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#scene-text{
+  position: relative;
+  background-color: rgba(122, 149, 136, 0.174);
+  color: white;
+  padding: 40px;
+  border-radius: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  
+}
+
+#choices-container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 20px;
+  background-color: rgba(12, 13, 13, 0.189);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+
+}
+
+#game-container{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
 }
