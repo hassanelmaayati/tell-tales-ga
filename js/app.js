@@ -3,6 +3,7 @@
 
 let current="apartment"
 let lineIndex=0
+let timer;
 
 /*-------------- Functions -------------*/
 function startGame(){
@@ -12,6 +13,7 @@ function startGame(){
 }
 
 function render(){
+  clearTimeout(timer);
   choicesContainer.innerHTML=""
   const scene= scenes[current]
   sceneText.textContent=scene.dialog[lineIndex]
@@ -29,9 +31,10 @@ function render(){
     renderChoices(scene.choices)
     }
   }
+  timer = setTimeout(nextLineOfDialog, 4000);
 }
 function nextLineOfDialog(event){
-  if(event.target.tagName === "BUTTON"){
+  if(event?.target?.tagName === "BUTTON"){
     return;
   }
   const scene = scenes[current];

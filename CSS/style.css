@@ -17,17 +17,6 @@
   
 }
 
-.londrina-shadow-regular {
-  font-family: "Londrina Shadow", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.nosifer-regular {
-  font-family: "Nosifer", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .hidden {
   display: none !important;
 }
@@ -36,39 +25,49 @@
   position: absolute;
   top: 0; 
   left: 0;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
 }
 
 #scene-text{
   position: relative;
-  background-color: rgba(122, 149, 136, 0.174);
-  color: white;
-  padding: 40px;
-  border-radius: 18px;
-  max-width: 1000px;
+  background-color: rgba(53, 52, 52, 0.67);
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding: 30px 36px;
+  border-radius: 10px;
+  max-width: 650px;
   margin: 0 auto;
   text-align: center;
-  backdrop-filter: blur(4px);
   
 }
 
 #choices-container{
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 12px;
   margin-top: 20px;
-  background-color: rgba(12, 13, 13, 0.189);
-  color: white;
-  padding: 10px;
-  border-radius: 8px;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  cursor: pointer;
-  backdrop-filter: blur(4px);
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 
+}
+
+#choices-container button {
+  font-size: 1rem;
+  color: #f2f2f2;
+  background-color: rgba(60, 60, 60, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.001);
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#choices-container button:hover {
+  background-color: rgba(14, 42, 27, 0.5);
 }
 
 #game-container{
@@ -77,4 +76,5 @@
   justify-content:center;
   align-items: center;
   height: 100vh;
+  gap: 10px;
 }
