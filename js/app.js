@@ -1,5 +1,8 @@
-/*-------------- Constants -------------*/
+/*---------- Variables (state) ---------*/
+// let, not const, because these values change as the game progresses
 
+let current="apartment"
+let lineIndex=0
 
 /*-------------- Functions -------------*/
 function startGame(){
@@ -62,14 +65,6 @@ function handleChoiceClick(event){
   render()
 
 }
-
-/*---------- Variables (state) ---------*/
-// let, not const, because these values change as the game progresses
-
-let current="apartment"
-let lineIndex=0
-
-
 
 /*----- Cached Element References  -----*/
 const startScreen = document.getElementById("start-screen")
