@@ -1,101 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
 #start-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  background-image: url('../images/MenuScreen.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 999;
-  transition: opacity 0.5s ease; 
-  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    background-image: url('../images/MenuScreen.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
 }
 
 .hidden {
-  display: none !important;
+    display: none !important;
 }
 
 #scene-image{
-  position: absolute;
-  top: 0; 
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 #scene-text{
-  position: relative;
-  background-color: rgba(53, 52, 52, 0.67);
-  color: #f2f2f2;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  padding: 30px 36px;
-  border-radius: 10px;
-  max-width: 650px;
-  margin: 0 auto;
-  text-align: center;
-  
+    position: relative;
+    background-color: rgba(20, 20, 20, 0.72);
+    color: #f5f5f5;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    padding: 28px 34px;
+    border-radius: 18px;
+    max-width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 #choices-container{
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 20px;
-  max-width: 450px;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top:18px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 #choices-container button {
-  font-size: 1rem;
-  color: #f2f2f2;
-  background-color: rgba(60, 60, 60, 0.9);
-  border: 1px solid rgba(0, 0, 0, 0.001);
-  padding: 12px 18px;
-  border-radius: 8px;
-  cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f5f5f5;
+    background-color: rgba(35, 35, 35, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 13px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
 #choices-container button:hover {
-  background-color: rgba(14, 42, 27, 0.5);
+    background-color: rgba(60, 60, 60, 0.95);
+    transform: translateY(-5px);
+  
 }
 
+#choices-container button:active {
+    transform: translateY(0);
+}
 #game-container{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  height: 100vh;
-  gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+    padding: 0 16px;
 }
 
 .container{
-  height: 20px;
-  background-color: #CCC;
-  border-radius: 4px;
+    height: 6px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
 
 }
 
 .container .progress-bar{
-  position:absolute;
-  height: 100px;
-  background-color: rgb(56, 141, 80);
-  animation: progress-animation 2s infinite;
+    height: 100%;
+    background-color: rgba(220, 60, 60, 0.85);
+    animation: progress-animation 2s infinite;
 }
 
 @keyframes progress-animation{
-  0%{width: 0%;}
-  100%{width: 100%;}
+    0%{width: 0%;}
+    100%{width: 100%;}
 
+
+}
+
+.start-content {
+    max-width: 520px;
+    text-align: center;
+  
+}
+
+.start-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: #f5f5f5;
+    background-color: rgba(20, 20, 20, 0.65);
+    padding: 24px 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.06);
 
 }
