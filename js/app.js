@@ -31,7 +31,9 @@ function render(){
     renderChoices(scene.choices)
     }
   }
-  timer = setTimeout(nextLineOfDialog, 4000);
+
+  timer = setTimeout(nextLineOfDialog, 2000); //make it 4000 before presentation
+
 }
 function nextLineOfDialog(event){
   if(event?.target?.tagName === "BUTTON"){
