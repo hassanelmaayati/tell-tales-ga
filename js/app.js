@@ -23,29 +23,25 @@ function render(){
   else{
     if(scene.win===true){
       sceneImage.src="images/win.png"
+      renderRestartButton()
     }
     else if(scene.win===false){
       sceneImage.src="images/loss.png"
+      renderRestartButton()
     }
     else{
     renderChoices(scene.choices)
+
     }
   }
+    if(!scene.ending && lineIndex < scene.dialog.length - 1){
+      timer = setTimeout(nextLineOfDialog, 2000); //make it 3500 before presentation
 
-  timer = setTimeout(nextLineOfDialog, 2000); //make it 4000 before presentation
-
+}
 }
 function nextLineOfDialog(event){
   if(event?.target?.tagName === "BUTTON"){
     return;
-  }
-  const scene = scenes[current];
-
-  if(scene.ending && lineIndex === scene.dialog.length - 1) {
-    current="apartment"
-    lineIndex=0
-    render()
-    return
   }
   lineIndex++;
   render()
@@ -63,12 +59,31 @@ function renderChoices(choices){
 
 function handleChoiceClick(event){
   if(event.target.tagName !== "BUTTON"){
-  return;
+    return;
+  }
+  if(!event.target.dataset.next){
+    return;
   }
   current = event.target.dataset.next
   lineIndex = 0
   render()
 
+}
+
+function renderRestartButton(){
+  const btn = document.createElement('button');
+  btn.textContent = "Play Again";
+  choicesContainer.appendChild(btn);
+  btn.addEventListener('click', returnToStart);
+
+}
+
+function returnToStart(){
+    startScreen.classList.remove("hidden")
+    gameContainer.classList.add("hidden")
+    current="apartment"
+    lineIndex=0
+   
 }
 
 /*----- Cached Element References  -----*/
