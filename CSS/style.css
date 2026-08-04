@@ -79,3 +79,23 @@
   gap: 10px;
 }
 
+.container{
+  height: 20px;
+  background-color: #CCC;
+  border-radius: 4px;
+
+}
+
+.container .progress-bar{
+  position:absolute;
+  height: 100px;
+  background-color: rgb(56, 141, 80);
+  animation: progress-animation 2s infinite;
+}
+
+@keyframes progress-animation{
+  0%{width: 0%;}
+  100%{width: 100%;}
+
+
+}
