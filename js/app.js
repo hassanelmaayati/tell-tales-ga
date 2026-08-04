@@ -6,7 +6,11 @@ let lineIndex=0
 let timer;
 
 /*-------------- Functions -------------*/
+
+
+
 function startGame(){
+  audioElement.play()
   startScreen.classList.add("hidden")
   gameContainer.classList.remove("hidden")
   render()
@@ -43,6 +47,11 @@ function nextLineOfDialog(event){
   if(event?.target?.tagName === "BUTTON"){
     return;
   }
+    const scene = scenes[current];
+  if(lineIndex >= scene.dialog.length - 1){
+    return;
+  }
+
   lineIndex++;
   render()
 }
@@ -92,7 +101,7 @@ const gameContainer= document.getElementById("game-container")
 const sceneImage=document.getElementById("scene-image")
 const sceneText=document.getElementById("scene-text")
 const choicesContainer=document.getElementById("choices-container")
-
+const audioElement=document.getElementById("bg-music");
 
 /*----------- Event Listeners ----------*/
 startScreen.addEventListener("click",startGame)
