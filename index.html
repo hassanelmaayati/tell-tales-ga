@@ -8,13 +8,15 @@
 </head>
 
 <body>
-  <audio id="bg-music" src="audio/bgMusicWorldWarZThemeSong.mp3" loop></audio>
-
-  <div id="start-screen">
-    <div class="start-content">
-      <p>Survive the outbreak. Reach the shelter alive — but choose carefully, not every path leads to safety.</p>
-    </div>
+ <audio id="game-music" src="audio/bgMusicWorldWarZThemeSong.mp3" loop></audio>
+<div id="start-screen">
+  <video id="menu-video" autoplay muted loop playsinline>
+    <source src="video/The_Last_of_Us_Part_I_-_Main_Menu_Music-1080.mp4" type="video/mp4">
+  </video>
+  <div class="start-content">
+    <p>Survive the outbreak. Reach the shelter alive, but choose carefully, not every path leads to safety.</p>
   </div>
+</div>
 
   <div id="game-container" class="hidden">
     <img id="scene-image" src="" alt="">

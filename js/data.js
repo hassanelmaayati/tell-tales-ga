@@ -19,11 +19,11 @@ const scenes = {
             street: {
               dialog: [
                 "The hallway lights flicker. The elevator is out.",
-                "You reach the street — chaos everywhere, overturned cars, distant screams.",
+                "You reach the street, chaos everywhere, overturned cars, distant screams.",
                 "Two routes stand before you: a treeline to the east, and downtown to the west.",
                 "You need to choose fast."
               ],
-              image: "images/Street.png",
+              image: "images/street.png",
               choices: [
                 { label: "Go through the woods", nextId: "woods" },
                 { label: "Go through downtown", nextId: "downtown" },
@@ -34,7 +34,7 @@ const scenes = {
             woods: {
               dialog: [
                 "The trees swallow the city noise. It's quiet. Too quiet.",
-                "Something rustles in the bushes nearby.",
+                "Something rustles behind the trees nearby.",
                 "You freeze, straining to hear which direction it's coming from."
               ],
               image: "images/woods.png",
@@ -48,7 +48,7 @@ const scenes = {
             downtown: {
               dialog: [
                 "Storefronts are shattered. Alarms wail uselessly in the distance.",
-                "A pharmacy sign flickers — still stocked, maybe.",
+                "A pharmacy sign flickers, still stocked, maybe.",
                 "You hear shuffling footsteps somewhere close."
               ],
               image: "images/downtown.png",
@@ -62,11 +62,11 @@ const scenes = {
             bittenNeighbor: {
               dialog: [
                 "You knock on your neighbor's door. No answer.",
-                "You push it open — he's slumped in the corner, breathing wrong.",
-                "He turns fast. Too fast.",
-                "GAME OVER — You were bitten."
+                "You push it open, she's slumped in the corner, breathing wrong.",
+                "she turns fast. Too fast.",
+                "GAME OVER, You were bitten."
               ],
-              image: "images/Apartment.png",
+              image: "images/BittenNeighbor.png",
               ending: true,
               win: false
             },
@@ -74,11 +74,11 @@ const scenes = {
             overrunHome: {
               dialog: [
                 "You bolt the door and wait, listening to the chaos outside fade.",
-                "Then you hear it — scratching at the window.",
+                "Then you hear it, scratching at the window.",
                 "The glass gives way.",
-                "GAME OVER — Overrun at home."
+                "GAME OVER, Overrun at home."
               ],
-              image: "images/Apartment.png",
+              image:" images/OverrunHome.png",
               ending: true,
               win: false
             },
@@ -88,9 +88,9 @@ const scenes = {
                 "You wait, scanning the sky for helicopters that never come.",
                 "The infected notice you standing still.",
                 "There's nowhere left to run.",
-                "GAME OVER — Caught in the open."
+                "GAME OVER, Caught in the open."
               ],
-              image: "images/Street.png",
+              image: "images/Caught in the Open (lose).png",
               ending: true,
               win: false
             },
@@ -99,9 +99,9 @@ const scenes = {
               dialog: [
                 "You crouch behind a fallen log, holding your breath.",
                 "The rustling stops directly behind you.",
-                "GAME OVER — You were bitten."
+                "GAME OVER, You were bitten."
               ],
-              image: "images/woods.png",
+              image: "images/Bitten (Woods).png",
               ending: true,
               win: false
             },
@@ -109,11 +109,11 @@ const scenes = {
             ambushed: {
               dialog: [
                 "You slip inside, scanning shelves for supplies.",
-                "A shadow moves behind the counter — then another, and another.",
+                "A shadow moves behind the counter, then another, and another.",
                 "You're surrounded before you reach the door.",
-                "GAME OVER — Ambushed."
+                "GAME OVER, Ambushed."
               ],
-              image: "images/downtown.png",
+              image: "images/Ambushed (Downtown, lose).png",
               ending: true,
               win: false
             },
@@ -123,9 +123,9 @@ const scenes = {
                 "You push forward, ignoring every sound behind you.",
                 "Through the treeline, a fenced compound comes into view.",
                 "Guards wave you through the gate.",
-                "YOU SURVIVED — Welcome to the shelter."
+                "YOU SURVIVED, Welcome to the shelter."
               ],
-              image: "images/win.png",
+              image: "images/ShelterSafe Route(win).png",
               ending: true,
               win: true
             },
@@ -135,9 +135,9 @@ const scenes = {
                 "From the treetop, you spot a safer path around the horde below.",
                 "You climb down and move quickly, staying off the main trail.",
                 "The shelter gates open ahead.",
-                "YOU SURVIVED — You found the safest way in."
+                "YOU SURVIVED, You found the safest way in."
               ],
-              image: "images/win.png",
+              image: "images/ShelterScout Route(win).png",
               ending: true,
               win: true
             },
@@ -147,21 +147,21 @@ const scenes = {
                 "You keep your head down and move fast through the wreckage.",
                 "Following the emergency signs, you reach the shelter perimeter.",
                 "The gates close behind you.",
-                "YOU SURVIVED — Welcome to the shelter."
+                "YOU SURVIVED, Welcome to the shelter."
               ],
-              image: "images/win.png",
+              image: "images/ShelterSolo (Win).png",
               ending: true,
               win: true
             },
 
             shelterCompanion: {
               dialog: [
-                "You catch up to the stranger — she nods, and you move together.",
+                "You catch up to the stranger, she nods, and you move together.",
                 "Two sets of eyes are better than one out here.",
                 "You reach the shelter side by side.",
-                "YOU SURVIVED — You made it, together."
+                "YOU SURVIVED, You made it, together."
               ],
-              image: "images/win.png",
+              image: "images/ShelterCompanion (Win).png",
               ending: true,
               win: true
             }

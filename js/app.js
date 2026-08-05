@@ -7,7 +7,7 @@ const DIALOG_DELAY = 4000;
 
 /*-------------- Functions -------------*/
 function startGame() {
-  audioElement.play();
+  gameMusic.play();
   startScreen.classList.add("hidden");
   gameContainer.classList.remove("hidden");
   render();
@@ -92,7 +92,7 @@ const gameContainer = document.getElementById("game-container");
 const sceneImage = document.getElementById("scene-image");
 const sceneText = document.getElementById("scene-text");
 const choicesContainer = document.getElementById("choices-container");
-const audioElement = document.getElementById("bg-music");
+const gameMusic = document.getElementById("game-music");
 
 /*----------- Event Listeners ----------*/
 startScreen.addEventListener("click", startGame);
