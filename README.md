@@ -1,5 +1,5 @@
 # The First Of Us: Choose Your Own Adventure
-##(Play Now!)[https://hassanelmaayati.github.io/tell-tales-ga/}
+## [Play Now!](https://hassanelmaayati.github.io/tell-tales-ga/)
 ## Game Choice:
 - Choose Your Own Adventure, a branching narrative game where the player's choices determine survival.
 
