@@ -21,7 +21,6 @@ function render() {
   sceneImage.src = scene.image;
 
   if (lineIndex < scene.dialog.length - 1) {
-    // still mid-dialog, nothing extra to do
   } else {
     if (scene.win === true) {
       sceneImage.src = "images/ending.png";

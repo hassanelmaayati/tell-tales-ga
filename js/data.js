@@ -21,7 +21,7 @@ const scenes = {
       "Two routes stand before you: a treeline to the east, and downtown to the west.",
       "You need to choose fast."
     ],
-    image: "images/street.png",
+    image: "images/Street.png",
     choices: [
       { label: "Go through the woods", nextId: "woods" },
       { label: "Go through downtown", nextId: "downtown" },
