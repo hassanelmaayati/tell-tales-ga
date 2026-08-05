@@ -24,10 +24,10 @@ function render() {
     // still mid-dialog, nothing extra to do
   } else {
     if (scene.win === true) {
-      sceneImage.src = "images/win.png";
+      sceneImage.src = "images/ending.png";
       renderRestartButton();
     } else if (scene.win === false) {
-      sceneImage.src = "images/loss.png";
+      sceneImage.src = "images/ending.png";
       renderRestartButton();
     } else {
       renderChoices(scene.choices);
