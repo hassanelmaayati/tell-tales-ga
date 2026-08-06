@@ -1,22 +1,24 @@
 /*---------- Variables (state) ---------*/
+//the state variables/memory
 let current = "apartment";
 let lineIndex = 0;
 let timer;
 const DIALOG_DELAY = 4000;
 
 /*-------------- Functions -------------*/
+//triggered when the player clicks the start screen and calls the render
 function startGame() {
   gameMusic.play();
   startScreen.classList.add("hidden");
   gameContainer.classList.remove("hidden");
   render();
 }
-
+//the core engine
 function render() {
-  clearTimeout(timer);
-  choicesContainer.innerHTML = "";
-  const scene = scenes[current];
-  sceneText.textContent = scene.dialog[lineIndex];
+  clearTimeout(timer);//clears the timer for auto dialog progress
+  choicesContainer.innerHTML = "";//empties the choices container
+  const scene = scenes[current];//gets the current screen
+  sceneText.textContent = scene.dialog[lineIndex]; //gets the dialog for the current scene
   sceneImage.src = scene.image;
 
   const isLastLine = lineIndex === scene.dialog.length - 1;
@@ -34,7 +36,7 @@ function render() {
 }
 
 function nextLineOfDialog(event) {
-  if (event?.target?.tagName === "BUTTON") {
+  if (event?.target?.tagName === "BUTTON")/*taken from AI to fix dialog bugs, it works like a guard to prevent going past the last line*/  {
     return;
   }
   const scene = scenes[current];
@@ -45,7 +47,7 @@ function nextLineOfDialog(event) {
   render();
 }
 
-function renderChoices(choices) {
+function renderChoices(choices)/*builds one button per choice giving each button a choice from the label*/  {
   choices.forEach(choice => {
     const btn = document.createElement('button');
     btn.textContent = choice.label;
@@ -54,7 +56,7 @@ function renderChoices(choices) {
   });
 }
 
-function handleChoiceClick(event) {
+function handleChoiceClick(event)/* makes sure that the button was clicked and has a next scene attached (the restart again doesnt) so it jumps to the current and resets the variable line index to 0 before rerendering*/ {
   if (event.target.tagName !== "BUTTON") {
     return;
   }
