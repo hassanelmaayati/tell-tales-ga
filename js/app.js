@@ -1,5 +1,4 @@
 /*---------- Variables (state) ---------*/
-// let, not const, because these values change as the game progresses
 let current = "apartment";
 let lineIndex = 0;
 let timer;
@@ -20,20 +19,16 @@ function render() {
   sceneText.textContent = scene.dialog[lineIndex];
   sceneImage.src = scene.image;
 
-  if (lineIndex < scene.dialog.length - 1) {
-  } else {
-    if (scene.win === true) {
-      sceneImage.src = "images/ending.png";
-      renderRestartButton();
-    } else if (scene.win === false) {
+  const isLastLine = lineIndex === scene.dialog.length - 1;
+
+  if (isLastLine) {
+    if (scene.ending) {
       sceneImage.src = "images/ending.png";
       renderRestartButton();
     } else {
       renderChoices(scene.choices);
     }
-  }
-
-  if (!scene.ending && lineIndex < scene.dialog.length - 1) {
+  } else {
     timer = setTimeout(nextLineOfDialog, DIALOG_DELAY);
   }
 }
