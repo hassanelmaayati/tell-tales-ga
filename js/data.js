@@ -8,6 +8,7 @@ const scenes = {
       "You have seconds to decide what to do."
     ],
     image: "images/Apartment.png",
+    altText: "A dark, cluttered apartment bedroom lit by a flickering TV screen",
     choices: [
       { label: "Grab your bag and leave now", nextId: "street" },
       { label: "Check on your neighbor first", nextId: "bittenNeighbor" },
@@ -22,6 +23,7 @@ const scenes = {
       "You need to choose fast."
     ],
     image: "images/Street.png",
+    altText: "A chaotic street at dusk with overturned cars and a path splitting toward woods and downtown",
     choices: [
       { label: "Go through the woods", nextId: "woods" },
       { label: "Go through downtown", nextId: "downtown" },
@@ -35,6 +37,7 @@ const scenes = {
       "You freeze, straining to hear which direction it's coming from."
     ],
     image: "images/woods.png",
+    altText: "A dense, foggy forest at dusk",
     choices: [
       { label: "Hide and wait it out", nextId: "bittenWoods" },
       { label: "Keep moving toward shelter", nextId: "shelterSafe" },
@@ -48,6 +51,7 @@ const scenes = {
       "You hear shuffling footsteps somewhere close."
     ],
     image: "images/downtown.png",
+    altText: "A damaged downtown street with shattered storefronts and a flickering pharmacy sign",
     choices: [
       { label: "Search a store for supplies", nextId: "ambushed" },
       { label: "Keep moving, ignore it", nextId: "shelterSolo" },
@@ -62,6 +66,7 @@ const scenes = {
       "GAME OVER, You were bitten."
     ],
     image: "images/BittenNeighbor.png",
+    altText: "A dim apartment hallway with a door left open, showing a shadowed figure inside",
     ending: true,
     win: false
   },
@@ -73,6 +78,7 @@ const scenes = {
       "GAME OVER, Overrun at home."
     ],
     image: "images/OverrunHome.png",
+    altText: "A barricaded apartment room with a cracked window",
     ending: true,
     win: false
   },
@@ -84,6 +90,7 @@ const scenes = {
       "GAME OVER, Caught in the open."
     ],
     image: "images/CaughtintheOpen.png",
+    altText: "An empty street at dusk with distant figures approaching through the haze",
     ending: true,
     win: false
   },
@@ -94,6 +101,7 @@ const scenes = {
       "GAME OVER, You were bitten."
     ],
     image: "images/BittenWoods.png",
+    altText: "A foggy forest floor near a fallen log at dusk",
     ending: true,
     win: false
   },
@@ -105,6 +113,7 @@ const scenes = {
       "GAME OVER, Ambushed."
     ],
     image: "images/Ambushed.png",
+    altText: "A ransacked convenience store with dim emergency lighting",
     ending: true,
     win: false
   },
@@ -116,6 +125,7 @@ const scenes = {
       "YOU SURVIVED, Welcome to the shelter."
     ],
     image: "images/ShelterSafeRoute.png",
+    altText: "A fortified survivor compound at dusk with a gate opening",
     ending: true,
     win: true
   },
@@ -127,6 +137,7 @@ const scenes = {
       "YOU SURVIVED, You found the safest way in."
     ],
     image: "images/ShelterScoutRoute.png",
+    altText: "A view from a treetop looking down toward a fortified compound in the distance",
     ending: true,
     win: true
   },
@@ -138,6 +149,7 @@ const scenes = {
       "YOU SURVIVED, Welcome to the shelter."
     ],
     image: "images/ShelterSolo.png",
+    altText: "A heavy shelter gate closing at dusk",
     ending: true,
     win: true
   },
@@ -149,6 +161,7 @@ const scenes = {
       "YOU SURVIVED, You made it, together."
     ],
     image: "images/ShelterCompanion.png",
+    altText: "Two survivors walking together toward an open shelter gate at dusk",
     ending: true,
     win: true
   }
