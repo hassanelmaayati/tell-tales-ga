@@ -6,8 +6,6 @@
 ## Concept
 - The player starts in their apartment when an emergency alarm interrupts their phone and TV, warning of a zombie outbreak and calling for immediate evacuation to shelters. The player must leave the city, make choices at each scene that leads towards survival (reaching the shelter) or death (bitten, overrun, ambushed, etc).
 
-## Story Map
-<img width="1267" height="743" alt="Story tree" src="https://github.com/user-attachments/assets/d0d24d1d-b9b0-48f0-87e6-8e74efa8741a" />
 
 ## Screenshots
 <img width="1918" height="900" alt="main screen screenshot" src="https://github.com/user-attachments/assets/a887448d-f351-405a-ac26-cc3a90e2c30d" />
@@ -15,6 +13,8 @@
 <img width="1918" height="897" alt="ingame SS1" src="https://github.com/user-attachments/assets/b8c896f3-bd0b-4bd5-b95a-0ded2c388ee9" />
 
 
+## Story Map
+<img width="1267" height="743" alt="Story tree" src="https://github.com/user-attachments/assets/d0d24d1d-b9b0-48f0-87e6-8e74efa8741a" />
 
  **Scene 1: Apartment**
 - A) Grab bag and leave now → Scene 2 (Street)
