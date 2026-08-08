@@ -1,4 +1,4 @@
-<img width="1918" height="897" alt="image" src="https://github.com/user-attachments/assets/6a0bb14c-93d7-4bdd-9b1a-51d9f39756c5" /># The First Of Us: Choose Your Own Adventure
+# The First Of Us: Choose Your Own Adventure
 ## [Play Now!](https://hassanelmaayati.github.io/tell-tales-ga/)
 ## Game Choice:
 - Choose Your Own Adventure, a branching narrative game where the player's choices determine survival.
@@ -10,6 +10,10 @@
 <img width="1267" height="743" alt="Story tree" src="https://github.com/user-attachments/assets/d0d24d1d-b9b0-48f0-87e6-8e74efa8741a" />
 
 ## Screenshots
+<img width="1918" height="900" alt="main screen screenshot" src="https://github.com/user-attachments/assets/a887448d-f351-405a-ac26-cc3a90e2c30d" />
+<img width="1918" height="902" alt="ingame SS" src="https://github.com/user-attachments/assets/96520f76-f36e-4e94-a209-89eb8809f7d6" />
+<img width="1918" height="897" alt="ingame SS1" src="https://github.com/user-attachments/assets/b8c896f3-bd0b-4bd5-b95a-0ded2c388ee9" />
+
 
 
  **Scene 1: Apartment**
