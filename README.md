@@ -74,5 +74,11 @@ ___
     Invoke render() on page load
 
 
+## Attributions
+
+- Button hover effect CSS by [gagan-gv](https://getcssscan.com/css-buttons-examples) — used for the choice buttons
+- Background images generated using [Google Gemini](https://gemini.google.com)
+- Background music: "World War Z Theme Song" — sourced from YouTube, used for in-game background music
+- Main menu background video: "The Last of Us" start screen — sourced from YouTube, used for the start screen background
 ## Stack
           HTML, CSS, JavaScript 
