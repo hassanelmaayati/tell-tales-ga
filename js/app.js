@@ -20,6 +20,7 @@ function render() {
   const scene = scenes[current];//gets the current screen
   sceneText.textContent = scene.dialog[lineIndex]; //gets the dialog for the current scene
   sceneImage.src = scene.image;
+  sceneImage.alt = scene.altText;
 
   const isLastLine = lineIndex === scene.dialog.length - 1;
 
